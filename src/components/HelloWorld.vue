@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h2>{{msg}}</h2>
+    <h3>{{message}}</h3>
   </div>
 </template>
 
@@ -10,7 +11,12 @@ export default {
   props: {
     msg:{
       type:String,
+      default:'组件属性内置值'
+    },
+    message:{
+      type:String,
       default:''
+
     }
   }
 }
