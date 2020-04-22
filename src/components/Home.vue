@@ -12,8 +12,18 @@ export default {
     name:'Home',
     components:{
        [Button.name]:Button
-    }
-    
+    },
+    data(){
+        return {
+
+        }
+    },
+    methods:{
+        onClick(){
+            console.log('跳转')
+            this.$router.push('/prize')
+        }
+    }  
 }
 </script>
 <style scoped>
